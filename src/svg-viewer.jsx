@@ -17,7 +17,7 @@ const SvgViewer = ({
   const [tool, setTool] = useState(TOOL_AUTO);
   const [value, setValue] = useState(INITIAL_VALUE);
   const [scaleFactorMin, setScaleFactorMin] = useState(1);
-  const scaleFactorMax = 1.25;
+  const scaleFactorMax = 4;
 
   useEffect(() => {
     Viewer.current.pan(...startAt);
